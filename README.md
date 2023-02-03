@@ -39,7 +39,7 @@ dotenv-sebas reuse a part of dotenv-flow's code, and remove rest part to make se
 ## Install
 
 ```bash
-npm install dotenv-sebas
+npm install dotenv-sebas dotenv
 ```
 
 ## Usage
