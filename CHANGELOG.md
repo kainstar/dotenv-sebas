@@ -1,3 +1,10 @@
+## 1.0.0 (2023-02-03)
+
+
+### Features
+
+* impl basic feature; ([a58bd96](https://github.com/kainstar/dotenv-sebas/commit/a58bd96bf18a990e2cbb4561735af6ea2a5c77f9))
+
 ### [1.0.1](https://github.com/kainstar/typescript-npm-package-template/compare/v1.0.0...v1.0.1) (2022-04-23)
 
 
