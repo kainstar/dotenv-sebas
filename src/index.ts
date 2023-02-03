@@ -29,7 +29,7 @@ interface IConfigOptions extends Omit<dotenv.DotenvConfigOptions, 'path' | 'over
   /**
    * Default: `process.cwd()`
    *
-   * Specify a custom dir path where your .env[.xxx] files exist
+   * Specify a custom dir path where sebas load your .env* files
    *
    * example: `require('dotenv-sebas').config({ dir: '/custom/path/to' })`
    */
@@ -38,15 +38,13 @@ interface IConfigOptions extends Omit<dotenv.DotenvConfigOptions, 'path' | 'over
   /**
    * Default: `process.env.NODE_ENV`
    *
-   * Specify a string which used to concat to dotenv filename suffix
+   * Specify a string which environment you are
    *
    * example: `require('dotenv-sebas').config({ env: process.env.CUSTOM_DOTENV_ENV })`
    */
   env?: string;
 
   /**
-   * Default: `false`
-   *
    * Override same key's value in process.env
    */
   overrideProcessEnv?: boolean;
@@ -55,7 +53,7 @@ interface IConfigOptions extends Omit<dotenv.DotenvConfigOptions, 'path' | 'over
 /**
  * Main entry point into the "dotenv-sebas". Allows configuration before loading `.env*` files.
  */
-export function load(options: IConfigOptions = {}) {
+export function config(options: IConfigOptions = {}) {
   const { overrideProcessEnv, env = process.env.NODE_ENV, dir = process.cwd(), ...dotenvConfig } = options;
   let envFiles = listExistDotenvFiles(dir, {
     env,
@@ -87,4 +85,4 @@ export function load(options: IConfigOptions = {}) {
   return configResult;
 }
 
-export default load;
+export default config;
