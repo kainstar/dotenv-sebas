@@ -1,3 +1,4 @@
+import { describe, it, beforeAll, beforeEach, afterAll, expect, vi } from 'vitest';
 import path from 'path';
 import sebas from '../src';
 
@@ -28,7 +29,7 @@ describe('dotenv-sebas', () => {
   it('loads environment variables from `process.cwd()` into `process.env`', () => {
     expect(process.env).not.toHaveProperty('ENV_VAR');
 
-    const spy = jest.spyOn(process, 'cwd').mockReturnValue(testEnvDir);
+    const spy = vi.spyOn(process, 'cwd').mockReturnValue(testEnvDir);
     sebas();
     spy.mockRestore();
 

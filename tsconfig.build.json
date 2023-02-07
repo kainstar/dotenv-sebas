@@ -1,9 +1,0 @@
-{
-  "extends": "./tsconfig.base.json",
-  "compilerOptions": {
-    "composite": true,
-    "rootDir": "src",
-    "outDir": "lib" /* Redirect output structure to the directory. */
-  },
-  "include": ["src"]
-}
