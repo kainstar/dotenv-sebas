@@ -2,6 +2,8 @@
   "name": "dotenv-sebas",
   "version": "1.0.0",
   "description": "Help you loads environment variables from .env[.env_var][.local] files",
+  "sideEffects": false,
+  "type": "module",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
