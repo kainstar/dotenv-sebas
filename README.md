@@ -1,3 +1,5 @@
+## THIS REPO IS DEPRECATED. REUSE [DOTENV-FLOW](https://github.com/kerimdzhanov/dotenv-flow) PLEASE.
+
 # dotenv-sebas
 
 <img src="https://raw.githubusercontent.com/kainstar/dotenv-sebas/master/logo.png" alt="dotenv-sebas" width="280" height="140" align="right" />
